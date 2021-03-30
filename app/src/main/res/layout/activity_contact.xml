@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#181818"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ContactActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_ground"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:enabled="false"
+            android:text="Kime: sbilgili283@gmail.com"
+            android:textColor="#F3F3F3"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edt_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_ground"
+        android:hint="Konu"
+        android:textColorHint="#F3F3F3"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/edt_message"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/text_ground"
+        android:gravity="top"
+        android:hint="Mesaj"
+        android:textColorHint="#F3F3F3"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_ground"
+        android:padding="10dp"
+        android:text="Gönder"
+        android:textColor="#1db954"
+        android:textSize="20sp" />
+
+</LinearLayout>
